@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Static Site</title>
+</head>
+<body>
+  <h1>This is my static site 🚀</h1>
+  <p>Deployed via GitHub Actions + EC2</p>
+</body>
+</html>
