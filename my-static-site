@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Static Site</title>
+  <title>CI/CD Demo</title>
+  <style>
+    body {
+      background-color: #1e1e2f;
+      color: white;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding-top: 100px;
+    }
+
+    h1 {
+      font-size: 50px;
+    }
+
+    p {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-  <h1>This is my static site 🚀</h1>
-  <p>Deployed via GitHub Actions + EC2</p>
+  <h1>🚀 CI/CD Deployment Successful</h1>
+  <p>This page was deployed automatically via GitHub Actions → AWS SSM → EC2</p>
 </body>
 </html>
