@@ -20,10 +20,11 @@ jobs:
 
       - name: Deploy via SSM
         run: |
-          aws ssm send-command \
-            --instance-ids "${{ secrets.EC2_INSTANCE_ID }}" \
-            --document-name "AWS-RunShellScript" \
-            --parameters commands='[
-              "/usr/local/bin/deploy_site.sh static1 git@github.com:JBits-Technology/my-static-site.git main"
-            ]'
+         aws ssm send-command \
+           --instance-ids "${{ secrets.EC2_INSTANCE_ID }}" \
+           --document-name "AWS-RunShellScript" \
+           --parameters commands='[
+             "/usr/local/bin/deploy_site.sh static-site https://github.com/JBits-Technology/my-static-site.git main"
+              ]'
+
 
